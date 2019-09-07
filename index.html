@@ -1,1 +1,212 @@
-Test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans:400,400i,700,700i,800,800i|Oswald:400,700|Roboto+Slab:400,700|Roboto:400,400i,700,700i,900,900i|Shadows+Into+Light|Source+Sans+Pro:400,400i,700,700i,900,900i|Thasadith:400,400i,700,700i"/>
+  <link rel="stylesheet" href="css/cropper.min.css"/>
+  <link rel="stylesheet" href="css/quill.core.css"/>
+  <link rel="stylesheet" href="css/quill.snow.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/layout.css"/>
+  <link rel="shortcut icon" href="256_2.png" type="image/x-icon">
+  <script src="js/chroma.min.js"></script>
+  <script src="js/vanilla-picker.min.js"></script>
+  <script src="js/cropper.min.js"></script>
+  <script src="js/quill.min.js"></script>
+  <script src="js/localforage.min.js"></script>
+  <script src="js/captioneer.js"></script>
+  <script src="js/main.js"></script>
+  <title>Captioneer - Create simple and beatiful image captions</title>
+</head>
+<body>
+  <div id="colors" class=""></div>
+  <div id="contents">
+    <div class="first">
+      <div id="options-wrapper">
+        <div class="comp-group vert">
+          <div class="title">Image</div>
+          <div class="components">
+            <div class="comp-input color-picker">
+              <span></span>
+              <div class="picker" id="textcol">Text Color</div>
+              <div class="eyedropper" id="textcoleye"></div>
+            </div>
+            <div class="comp-input color-picker">
+              <span></span>
+              <div class="picker" id="bgcol">Background Color</div>
+              <div class="eyedropper" id="bgcoleye"></div>
+            </div>
+            <div class="comp-input file-select">
+              <input type="file" id="image-sel"/>
+            </div>
+          </div>
+        </div>
+        <div class="comp-group vert">
+          <div class="title">Text</div>
+          <div class="components">
+            <div class="comp-input compass">
+                <table id="position-compass">
+                  <tr>
+                    <td></td>
+                    <td class="cell" data-pos="north">N</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="cell" data-pos="west">W</td>
+                    <td class="middle"></td>
+                    <td class="cell" data-pos="east">E</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td class="cell" data-pos="south">S</td>
+                    <td></td>
+                  </tr>
+                </table>
+            </div>
+            <div class="comp-input">
+              <label class="text">
+                <span>Padding</span>
+                <input id="padding" type="number" />
+              </label>
+            </div>
+            <div class="comp-input">
+              <label class="text">
+                <span>Font Size</span>
+                <input id="font-size" type="number" />
+              </label>
+            </div>
+            <div class="comp-input select">
+                <label class="text">
+                  <span>Font Family</span>
+                  <select class="font-select" id="font-select">
+                    <option class="arial" value="arial">Arial</option>
+                    <option class="roboto" value="'Roboto'">Roboto</option>
+                    <option class="opensans" value="'Open Sans'">Open Sans</option>
+                    <option class="thasadith" value="'Thasadith'">Thasadith</option>
+                    <option class="oswald" value="'Oswald'">Oswald</option>
+                    <option class="sourcesanspro" value="'Source Sans Pro'">Source Sans Pro</option>
+                    <option class="robotoslab" value="'Roboto Slab'">Roboto Slab</option>
+                    <option class="indieflower" value="'Indie Flower'">Indie Flower</option>
+                    <option class="shadowsintolight" value="'Shadows into Light'">Shadows into Light</option>
+                  </select>
+                </label>
+            </div>
+          </div>
+        </div>
+        <div class="comp-group vert">
+          <div class="title">Sizing</div>
+          <div class="components">
+            <div class="comp-input">
+              <label class="checkbox">
+                <span>Adjust image to text?</span>
+                <input id="adjust" type="checkbox" checked/>
+                <div></div>
+              </label>
+            </div>
+            <div class="comp-input">
+              <label class="text">
+                <span>Scale</span>
+                <input id="scale" type="number" step="0.1" />
+              </label>
+            </div>
+            <div class="comp-input">
+              <label class="checkbox">
+                <span>Fixed Image Width?</span>
+                <input id="fixed-width-toggle" type="checkbox" checked="false"/>
+                <div></div>
+              </label>
+            </div>
+            <div class="comp-input" id="fixed-width-wrapper" style="display: none;">
+              <label class="text">
+                <span>Width</span>
+                <input id="fixed-width" type="number"/>
+              </label>
+            </div>  
+          </div>
+        </div>
+        <button id="getresult">Get Result</button>
+      </div>
+    </div>
+    <div class="second">
+      <div id="text-wrapper">
+        <div id="text-toolbar">
+          <span class="ql-formats">
+            <button class="ql-bold"></button>
+            <button class="ql-italic"></button>
+            <button class="ql-clean"></button>
+            <button class="ql-script" value="sub"></button>
+            <button class="ql-script" value="super"></button>
+            <!--
+            <button class="ql-strike"></button>
+            <button class="ql-underline"></button>-->
+          </span>
+          <span class="ql-formats">
+            <select class="ql-color">
+              <option value="#4d0000"></option><option value="#4d1900"></option><option value="#4d3300"></option><option value="#4d4d00"></option><option value="#334d00"></option><option value="#194d00"></option><option value="#004d00"></option><option value="#004d1a"></option><option value="#004d33"></option><option value="#004d4d"></option><option value="#00334d"></option><option value="#001a4d"></option><option value="#00004d"></option><option value="#19004d"></option><option value="#33004d"></option><option value="#4d004d"></option><option value="#4d0033"></option><option value="#4d0019"></option><option value="#800000"></option><option value="#802a00"></option><option value="#805500"></option><option value="#808000"></option><option value="#558000"></option><option value="#2a8000"></option><option value="#008000"></option><option value="#00802b"></option><option value="#008055"></option><option value="#008080"></option><option value="#005580"></option><option value="#002b80"></option><option value="#000080"></option><option value="#2a0080"></option><option value="#550080"></option><option value="#800080"></option><option value="#800055"></option><option value="#80002a"></option><option value="#cc0000"></option><option value="#cc4400"></option><option value="#cc8800"></option><option value="#cccc00"></option><option value="#88cc00"></option><option value="#44cc00"></option><option value="#00cc00"></option><option value="#00cc44"></option><option value="#00cc88"></option><option value="#00cccc"></option><option value="#0088cc"></option><option value="#0044cc"></option><option value="#0000cc"></option><option value="#4400cc"></option><option value="#8800cc"></option><option value="#cc00cc"></option><option value="#cc0088"></option><option value="#cc0044"></option> main.js:56:11
+
+            </select>
+            <select class="ql-font">
+              <option>Default</option>
+              <option value="Roboto-Slab">Roboto Slab</option>
+              <option value="Arial">Arial</option>
+              <option value="Roboto">Roboto</option>
+              <option value="Open-Sans">Open Sans</option>
+              <option value="Thasadith">Thasadith</option>
+              <option value="Oswald">Oswald</option>
+              <option value="Source-Sans-Pro">Source Sans Pro</option>
+              <option value="Indie-Flower">Indie Flower</option>
+              <option value="Shadows-into-Light">Shadows into Light</option>
+            </select>
+            <input class="ql-font-size" id="ql-font-size">
+              
+            </input>
+            <!--<select class="ql-size">
+                <option>Default</option>
+                <option value="8px">8</option>
+                <option value="10px">10</option>
+                <option value="12px">12</option>
+                <option value="14px">14</option>
+                <option value="17px">17</option>
+                <option value="20px">20</option>
+                <option value="23px">22</option>
+                <option value="25px">25</option>
+                <option value="28px">28</option>
+                <option value="30px">30</option>
+                <option value="34px">34</option>
+                <option value="38px">38</option>
+                <option value="45px">45</option>
+                <option value="50px">50</option>
+                <option value="58px">58</option>
+                <option value="64px">64</option>
+                <option value="70px">70</option>
+            </select>-->
+          </span>
+          <span class="ql-formats">
+            <select class="ql-align">
+              <option selected>Left</option>
+              <option value="right">Right</option>
+              <option value="center">Centered</option>
+              <option value="justify">Justify</option>
+            </select>
+          </span>
+          <span class="ql-formats">
+          </span>
+        </div>
+        <div id="text" class="text-input">
+        
+        </div>
+      </div>
+      <canvas id="edimg" width="2048" height="2048"></canvas>
+      <div class="image-size">
+        <div id="imgsize"></div>
+        <div class="inner-wrapper">
+          <img id="crop" src="" class="show"/>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img id="result" class="invisible"/>
+</body>
+</html>

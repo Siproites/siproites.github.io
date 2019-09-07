@@ -1,0 +1,381 @@
+
+
+
+canvas{
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: block;
+}
+html {
+  font-family: sans-serif;
+}
+#imgsize {
+  text-align: center;
+  padding: 4px;
+  color: #656565;
+  background: #eee;
+
+}
+.image-size {
+  /*padding: 20px;*/
+  max-width: 850px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+#crop {
+  max-width: 100%;
+}
+
+#text-wrapper {
+  margin: 0px auto;
+  max-width: 850px;
+  box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.3);
+}
+#text-wrapper .ql-toolbar, #text-wrapper .ql-editor, #text-wrapper .ql-container {
+  border: none;
+}
+#text-wrapper .ql-align-justify {
+  white-space: normal;
+}
+#text {
+  resize: vertical;
+  min-height: 50px;
+  height: 200px;
+  overflow-y: auto;
+}
+#text-wrapper .ql-editor {
+  overflow: initial;
+  height: auto;
+  min-height: 100%;
+  /*margin: 12px 15px;*/
+}
+#text-wrapper .ql-editor .ql-font-Arial {
+  font-family: 'Arial';
+}
+#text-wrapper .ql-editor .ql-font-Roboto {
+  font-family: 'Roboto';
+}
+#text-wrapper .ql-editor .ql-font-Oswald {
+  font-family: 'Oswald';
+}
+#text-wrapper .ql-editor .ql-font-Thasadith {
+  font-family: 'Thasadith';
+}
+#text-wrapper .ql-editor .ql-font-Open-Sans {
+  font-family: 'Open Sans';
+}
+#text-wrapper .ql-editor .ql-font-Source-Sans-Pro {
+  font-family: 'Source Sans Pro';
+}
+#text-wrapper .ql-editor .ql-font-Roboto-Slab {
+  font-family: 'Roboto Slab';
+}
+#text-wrapper .ql-editor .ql-font-Shadows-into-Light {
+  font-family: 'Shadows into Light';
+}
+#text-wrapper .ql-editor .ql-font-Indie-Flower {
+  font-family: 'Indie Flower';
+}
+#text-wrapper .ql-editor::before {
+  color: inherit;
+  opacity: 0.6;
+}
+
+.picker_wrapper.popup.layout_default {
+  z-index: 22;
+}
+
+.invisible {
+  display: none;
+}
+.ql-picker {
+  z-index: 15;
+}
+.comp-input {
+  background: #FFFFFF;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 5px 10px;
+  font-size: 12px;
+  box-shadow: inset -2px -2px 18px -4px rgba(0, 0, 0, 0.3);
+}
+.comp-input.disabled {
+  background: #ACACAC;
+  cursor: not-allowed;
+}
+
+.comp-input label.text {
+  display: block;
+  width: 100%;
+}
+.comp-input label.text span {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.comp-input label.text input {
+  display: inline-block;
+  width: 50px;
+}
+
+.comp-input.compass table {
+  border: none;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+.comp-input.compass td {
+  width: 18px;
+  height: 18px;
+  line-height: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+.comp-input.compass td.cell {
+  cursor: pointer;
+  box-shadow: inset -2px -2px 18px -4px rgba(0, 0, 0, 0.3);
+  background: #DBDBDB;
+  transition: background 0.2s;
+}
+.comp-input.compass td.middle {
+  box-shadow: inset -2px -2px 18px -4px rgba(0, 0, 0, 0.3);
+  background: #767676;
+}
+.comp-input.compass td.cell.active {
+  background: #008000;
+  color: #FFFFFF;
+}
+.comp-input.compass td.cell:hover {
+  background: #909090;
+}
+
+.comp-input.select {
+  padding: 0;
+}
+.comp-input.select label span {
+  padding: 5px 10px;
+}
+
+.comp-input.select select {
+  font: inherit;
+  border: none;
+  padding: 5px 10px;
+}
+.comp-input.select select .roboto {
+  font-family: 'Roboto', sans-serif;
+}
+.comp-input.select select .opensans {
+  font-family: 'Open Sans', sans-serif;
+}
+.comp-input.select select .thasadith {
+  font-family: 'Thasadith', sans-serif;
+}
+.comp-input.select select .oswald {
+  font-family: 'Oswald', sans-serif;
+}
+.comp-input.select select .arial {
+  font-family: 'arial', sans-serif;
+}
+.comp-input.select select .sourcesanspro {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.comp-input.select select .robotoslab {
+  font-family: 'Roboto Slab', serif;
+}
+.comp-input.select select .indieflower {
+  font-family: 'Indie Flower', cursive;
+}
+.comp-input.select select .shadowsintolight {
+  font-family: 'Shadows into Light', cursive;
+}
+
+.comp-input.color-picker span {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  border: 1px solid #323232;
+}
+.comp-input.color-picker .picker {
+  display: inline-block;
+  vertical-align: middle;
+}
+.comp-input.color-picker .eyedropper {
+  vertical-align: middle;
+  display: inline-block;
+  float: right;
+  box-shadow: inset -2px -2px 18px -4px rgba(0, 0, 0, 0.3);
+  border: 1px solid #323232;
+  background-color: #ddd;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path style="fill: black" d="M17.542 13.147l-7.455-6.667 1.334-1.49c.822.736 2.087.666 2.822-.159l3.503-3.831c.593-.663 1.414-1 2.238-1 1.666 0 3.016 1.358 3.016 2.996 0 .723-.271 1.435-.78 2.005l-3.503 3.83c-.735.824-.666 2.087.158 2.825l-1.333 1.491zm-4.314-1.175l-7.791 8.65c-.314.352-1.322.323-1.853.557.172-.554.048-1.538.362-1.89l7.791-8.651-1.491-1.333-7.9 8.794c-1.277 1.423-.171 2.261-1.149 4.052-.135.244-.197.48-.197.698 0 .661.54 1.151 1.141 1.151.241 0 .492-.079.724-.256 1.733-1.332 2.644-.184 3.954-1.647l7.9-8.792-1.491-1.333z"/></svg>');
+  background-size: 80% 80%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.comp-input.file-select {
+  max-width: 100%;
+  overflow: hidden;
+}
+.comp-input.file-select input {
+  max-width: 100%;
+}
+
+/*
+.picker {
+  padding: $button-p;
+  background: $ui-back;
+  color: $ui-text;
+  box-shadow: $ui-grad;
+  display: inline-block;
+  margin: 5px;
+}*/
+.comp-input label.checkbox input {
+  display: none;
+}
+.comp-input label.checkbox span {
+  vertical-align: middle;
+}
+.comp-input label.checkbox input + div {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  background: white;
+  margin-left: 7px;
+  border: 2px solid #323232;
+  box-shadow: inset 0 0 0 10px white;
+  transition: box-shadow 0.2s, background 0s ease 0.2s;
+}
+.comp-input label.checkbox input:checked + div {
+  transition: box-shadow 0.2s;
+  background: #008000;
+  box-shadow: inset 0 0 0 2px white;
+}
+
+.comp-group {
+  display: inline-block;
+  vertical-align: top;
+}
+.comp-group .title {
+  display: block;
+  color: #FFFFFF;
+  padding: 1px 5px;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: 'Roboto Slab';
+  background: #008000;
+}
+.comp-group .components {
+  display: flex;
+  flex-direction: column;
+}
+
+.switch-wrapper {
+  vertical-align: middle;
+  background: #FFFFFF;
+  color: #000000;
+  box-shadow: inset -2px -2px 18px -4px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  margin: 5px;
+}
+.switch-wrapper .switch {
+  background: #000000;
+}
+.switch-wrapper span {
+  display: inline-block;
+  padding: 10px;
+}
+
+.input-wrapper {
+  vertical-align: middle;
+  background: #FFFFFF;
+  color: #000000;
+  box-shadow: inset -2px -2px 18px -4px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+}
+.input-wrapper input {
+  width: 40px;
+  display: inline-block;
+  border: none;
+  background: #000000;
+  color: #FFFFFF;
+}
+
+.input-checkbox {
+  vertical-align: middle;
+  background: #FFFFFF;
+  color: #000000;
+  box-shadow: inset -2px -2px 18px -4px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+}
+
+.switch {
+  padding: 3px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
+}
+.switch input {
+  display: none;
+}
+.switch input + div {
+  width: 20px;
+  height: 20px;
+  background: #464646;
+  box-shadow: inset 5px 5px 0px 0px rgba(0, 0, 0, 0.35), inset -5px -5px 0px 0px rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+  transition: margin 0.3s, -webkit-transform 0.3s;
+  transition: margin 0.3s, transform 0.3s;
+  transition: margin 0.3s, transform 0.3s, -webkit-transform 0.3s;
+}
+.switch input:checked + div {
+  margin-left: 20px;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+#options-wrapper button {
+  
+  background: black;
+  background: #FFFFFF;
+  color: #000000;
+  box-shadow: inset -2px -2px 18px -4px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  
+  cursor: pointer;
+}
+
+/* Color Table */
+.table{
+  display: flex;
+  width: 100%;
+  height: 20px;
+  justify-content: space-evenly;
+}
+.table .cell {
+   flex: 1;
+   transition: box-shadow 0.3s;
+   box-shadow: inset 0 0 1px 0px rgba(0,0,0,0.3);
+ }
+ .table .cell:hover {
+   box-shadow: inset 0 0 10px 0px rgba(0,0,0,0.4);
+ }
+ 
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

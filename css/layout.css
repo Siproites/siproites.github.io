@@ -1,0 +1,68 @@
+#contents {
+  display: flex;
+  flex: 1;
+  overflow-y: auto;
+}
+#contents .first {
+  width: 300px;
+  max-width: 400px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  background: linear-gradient(90deg, #330055, #551111);
+  overflow-y: auto;
+  display: flex;
+}
+#contents .second {
+  padding: 20px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+#contents .second > :last-child {
+  margin-bottom: 20px;
+}
+
+.comp-group {
+  max-width: 100%;
+  width: 100%;
+}
+.comp-group:not(:first-child){
+  margin-top: 10px;
+}
+.comp-input.select select{
+  float: right;
+}
+.comp-input label.checkbox div {
+  float: right;
+}
+.comp-input input {
+  float: right;
+}
+#options-wrapper {
+  padding: 10px;
+  /*height: 100%;*/
+  max-width: 300px;
+  margin: auto;
+  /*margin: 0 auto;*/
+}
+body {
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+@media (max-width: 900px) {
+  #contents {
+    flex-direction: column;
+    overflow: initial;
+  }
+  #contents .first {
+    width: 100%;
+    max-width: 100%;
+  }
+  #contents .second {
+    overflow: initial;
+  }
+  body {
+    overflow: auto;
+  }
+}
