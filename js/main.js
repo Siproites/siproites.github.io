@@ -359,7 +359,7 @@ function addListeners() {
         let img = event.target.result;
         if (!formElements.cropper.instance) {
           formElements.cropper.el.src = img;
-          formElements.cropper.instance = new Croppr(formElements.cropper.el, formElements.cropper.options);
+          formElements.cropper.instance = new Cropper(formElements.cropper.el, formElements.cropper.options);
         } else {
           formElements.cropper.instance.replace(img);
         }
