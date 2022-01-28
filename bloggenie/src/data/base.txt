@@ -1,0 +1,44 @@
+text color: white
+#text
+<start>
+
+<main>
+
+<curse^> <end>
+===
+#start
+Groggily you start coming to yourself again. You have no idea for how long you have been knocked out, that bitch really must have hit you hard. In your mind you are already planning how to get back to her if you see her again as you begin opening your eyes and start to look around. Something feels strange, but you can't put your finger on it...
+===
+#wallet
+You take out the tucked in id card and immediately stare at the photo imprinted on its front. <description.^> <description>
+<id>
+===
+#id
+That's when you notice the small print right next to the photo, your new name: <firstname> <lastname>. As you are reading this an intense hatred starts to build up in towards that name "<firstname>". You begin to scream "I am <firstname>"! People walking by glance at you, disgruntled and start picking up pace. But then you realize what you just said... You try it again, whispering to yourself: "<firstname>". What is happening? Why cannot you say your real name, ... what was it again? The harder you think about it, the more you feel it slip away from you, only leaving "<firstname> <lastname>" in your mind.
+
+You try turning the card around and see a small handwritten post-it: "I have another surprise for you - B.". Just as you finish reading it, it burts into purple flames, disappearing as quickly as they appeared.
+===
+
+#description.1
+The face of a <ethnicity> woman with <hair description> stares back at you. <compliment^>
+===
+#description.2
+Inside the small square you make out a <ethnicity> woman that has <hair description>. <compliment^>
+===
+#compliment.1
+Under normal circumstances, you would find her rather attractive.
+===
+#compliment.2
+"She really has a beautiful face..." you think.
+===
+#compliment.3
+You can't help but admit that she really is gorgeous.
+===
+
+#acceptance.1
+But it seems like I just have to deal with it, there's nothing I can do about it.
+===
+#regret.1
+Why couldn't I pause and think just one time in my life and think before clicking that stupid button. And now "my" life no longer even exists.
+===
+as you slowly begin to comprehend 

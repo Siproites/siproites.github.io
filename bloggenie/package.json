@@ -1,0 +1,13 @@
+{
+  "name": "Caps",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "snowpack": "^3.8.8"
+  },
+  "dependencies": {
+    "hyphenation.en-us": "^0.2.1",
+    "tex-linebreak": "^0.6.0"
+  }
+}

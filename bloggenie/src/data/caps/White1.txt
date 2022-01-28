@@ -1,0 +1,12 @@
+img: White1.jpg
+hair description: bright blonde hair that's almost white. It has light waves and is reaching down to almost touch her shoulders.
+ethnicity: white
+situation: inside
+
+background color: #d4cec2
+text color: #1b3648
+
+#main
+Who am I?
+<wallet>
+===

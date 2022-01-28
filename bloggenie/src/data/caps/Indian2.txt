@@ -1,0 +1,18 @@
+img: Indian2.jpeg
+ethnicity: indian
+language: Hindi
+hair description: long, dark brown curls that reach to her lower back
+description: She looks like a typical girl from india, like you met on a backpacking trip a few years ago.
+background color: #12273c
+filter first name: indian
+situation: inside
+
+#main
+As you're getting up you wonder what's so comfy? Then you notice the run down sofa you're sitting on. "Where am I?" you wonder as you glance around the dimly lit room. Shifting to sit upright you see the pile of paper on a small table in front of you. Reading through it you notice that it's marriage papers, and, to make matters worse, a signature is under there: "<firstname> <lastname>" in a neat handwriting. While reading it, long strands of hair fall into your view. You look down and see a large pair of breasts staring back at you. Frantically you stand up and begin to feel who you've become. On the table you also notice a bag with a wallet peeking out of it, and open the zipper.
+
+<wallet>
+===
+#end
+
+But the thought of the marriage papers still can't leave your mind. You go through the wallet again and find a letter, supposedly by your "mother". Reading through it you grasp what your life is. You're originally from Pakistan and were married off to an old cousin that lives in the US. Your new role is basically to keep the house clean and care for the children. Lots of children. You swallow at the outlook at your new life. Having to look good for your 40-something husband and maybe swallow some other things as well...
+===

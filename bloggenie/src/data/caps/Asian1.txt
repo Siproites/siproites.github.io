@@ -1,0 +1,6 @@
+img: Asian1.jpg
+ethnicity: asian
+
+#main
+You are sitting on a bench
+===

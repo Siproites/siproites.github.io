@@ -1,0 +1,72 @@
+#curse.bad_eyesight
+That's when suddenly the world around you begins to blur. Badly. You can hardly make out your own hand. This genie must have given you eyesight so bad you'll probably need a centimeter-thick glasses just to make out the contours of your environment.
+===
+#curse.long_hair
+Shortly after you begin to feel a tingle on top of your head. It worsens until it almost feels like tugging on your hair. You try to touch it but you just can't get a good grip. A few seconds later it stops and you notice your hair has grown out till your knees. You feel like someone just taped a weight to the back of your head. "I'll try to cut them at home" you think half-heartedly, somehow you know it won't be of much use. And where is "home" now anyway? Well at least your neck muscles will be getting a lot stronger now.
+===
+#curse.blindness
+And suddenly the world goes dark. "I can't see!" you scream. Surprised by your sudden loss of sight you stumble and fall down. You try rubbing your eyes but it's not helping at all. What am I supposed to do, not even able to see, as someone whose life I have no idea about? <regret^>
+===
+#curse.big_boobs
+big boobs
+===
+#curse.no_refuse
+no refuse
+===
+#curse.mute
+mute
+===
+#curse.dumb
+dumb
+===
+/*
+#curse.sex_drive
+Combine with above?
+===
+#curse.bald
+bald
+===
+#curse.jail
+policee
+===
+#curse.no_legs
+wheelchair
+===
+*/
+#curse.no arms
+A shudder goes through your arms and you feel them shifting around. In horror you observe as your skin begins to move, as if a thousand ants were crawling just under there. You try to touch the skin but you find you can't. The more you try to reach over the further your hands seems to get away. Now you see what's happening. Your hands... no your whole arms are receding into your body. A short moment later they are completely gone. <no arms.after>
+With every change you experienced you thought it couldn't get worse. But now you are truly at the bottom, not even having arms. How will you ever work, without being able to write or even use a computer? <regret^>
+===
+#curse.stutter
+"Wha- Wha- Wha- What di- di- di- did sh- sh- she do- do now?" You try to say, but the words came out butchered into little pieces, only repeating syllables. You cannot even speak properly now, great. That almost seems petty, not taking your ability to speak but impacting it enough to be a great deal of annoyance in whatever life you now have ahead of you.
+===
+/*
+#curse.smoking
+cigs
+===
+#curse.whisper
+hooow
+===
+#curse.erotic_voice
+sultry
+===
+#curse.altruism
+take my money bitch
+===
+#curse.only_sing
+"♩ ♫
+lalalala
+===
+#curse.high_heels
+high heels
+===
+#curse.pregnant
+ow my belly
+===
+#curse.baby
+how do i look tiny
+===
+#curse.emotional
+whining
+===
+*/

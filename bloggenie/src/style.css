@@ -1,0 +1,17 @@
+/*img {
+  display: block;
+  max-height: 500px;
+  max-width: 100%;
+}*/
+body {
+  color: black;
+  font-family: 'Roboto Slab';
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+a {
+  color: rgb(33, 130, 255);
+  text-decoration: none;
+  cursor: pointer;
+}

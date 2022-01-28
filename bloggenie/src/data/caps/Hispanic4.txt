@@ -1,0 +1,15 @@
+img: Hispanic4.jpeg
+hair description: short curled up locks that look massive compared to her head
+ethnicity: hispanic
+situation: outside
+background color: #3a4942
+
+#main
+A light breeze wakes you up. Still dazed you try to stand up but are thrown off balance by a weight on your right shoulder. A small backpack seems to be hanging down from it, how could you have missed that until now?
+
+That's when you notice something that you completely missed, the brown backpack hanging over your shoulder. You open the zipper and find a wallet inside. Standing in front of the church you feel the weight of something in your left hand: A small leather purse. Inside you find a wallet:
+<wallet> 
+===
+#no arms.after
+With a loud thump your backpack drops on the ground.
+===
